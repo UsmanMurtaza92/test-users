@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const DetailCard = ({ user, closeModal }: any) => {
   return (
-    <div className="fixed md:top-0 top-1/2 md:right-0 right-1/2 transform md:translate-x-0 md:translate-y-0 translate-x-1/2 -translate-y-1/2 bg-white md:h-screen overflow-y-scroll md:w-7/12 w-11/12 shadow-2xl rounded-t-xl rounded-l-xl md:p-20 p-10 md:border-none border">
+    <div className="fixed md:top-0 top-1/2 md:right-0 right-1/2 transform md:translate-x-0 md:translate-y-0 translate-x-1/2 -translate-y-1/2 bg-white md:h-screen overflow-y-scroll md:w-7/12 w-11/12 shadow-2xl rounded-t-xl rounded-l-xl md:p-20 p-10 md:border-none border animate-slide">
       <div className="flex justify-between items-center gap-2">
         <Icon
           icon="solar:close-square-broken"

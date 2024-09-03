@@ -32,3 +32,33 @@
 .custom-width {
   width: calc(100vw - 345px);
 }
+
+.animate-slide {
+  animation: slide 0.3s linear;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
